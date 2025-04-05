@@ -1,0 +1,28 @@
+<!-- Filename: /views/index.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Picture of the Day</title>
+</head>
+<body>
+    <div class="card">
+        <h1>NASA Picture of the Day (1995-2025)</h1>
+        <h2 id="greeting"><%= greeting %></h2>
+        <h3><%= title %></h3>
+
+        <% if (imageURL) { %>
+            <img src="<%= imageURL %>" alt="<%= title %>">
+            <% } else { %>
+            <p>No image available at the moment (likely due to NASA rate limits).</p>
+        <% } %>
+
+        <form method="GET" action="/">
+            <button type="submit">Get New Picture & Greeting</button>
+        </form>
+    </div>
+</body>
+</html>
