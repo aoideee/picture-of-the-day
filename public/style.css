@@ -3,43 +3,46 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Tropi Land';
-  src: url('/fonts/transfonter.org-20250405-020902/TropiLandRegular.woff2') format('woff2'),
-       url('/fonts/transfonter.org-20250405-020902/TropiLandRegular.woff') format('woff');
+  font-family: "Tropi Land";
+  src: url("/fonts/transfonter.org-20250405-020902/TropiLandRegular.woff2")
+      format("woff2"),
+    url("/fonts/transfonter.org-20250405-020902/TropiLandRegular.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Social Company';
-  src: url('/fonts/transfonter.org-20250405-020932/SocialCompany.woff2') format('woff2'),
-       url('/fonts/transfonter.org-20250405-020932/SocialCompany.woff') format('woff');
+  font-family: "Social Company";
+  src: url("/fonts/transfonter.org-20250405-020932/SocialCompany.woff2")
+      format("woff2"),
+    url("/fonts/transfonter.org-20250405-020932/SocialCompany.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: 'Social Company';
+  font-family: "Social Company";
   text-align: center;
   padding: 20px;
   background-color: #797d62;
-  color: #fff5e1;  
+  color: #fff5e1;
   margin: 0;
-  height: 100vh; 
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .card {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  background-color: #825f45; 
-  border-radius: 1rem;       
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+  background-color: #825f45;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   max-width: 800px;
   width: 90%;
@@ -50,21 +53,20 @@ body {
 }
 
 h1 {
-  color: #ffcb69;   
-  font-family: 'Tropi Land';        
-  font-size: 2.25rem;       
+  color: #ffcb69;
+  font-family: "Tropi Land";
+  font-size: 2.25rem;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 #greeting {
-  color: #ecd2c0;           
-  margin-top: 1rem;         
+  color: #ecd2c0;
+  margin-top: 1rem;
   font-style: italic;
   font-size: 1.125rem;
 }
-
 
 h3 {
   color: #f6e8e0;
@@ -76,7 +78,7 @@ img {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
-  border: 2px solid #997b66; 
+  border: 2px solid #997b66;
 }
 
 p {
@@ -86,12 +88,11 @@ p {
   text-align: justify;
 }
 
-
 button {
-  font-family: 'Social Company';
+  font-family: "Social Company";
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #d08c60;     
+  background-color: #d08c60;
   color: 1a130e;
   border: none;
   border-radius: 4px;
@@ -100,5 +101,5 @@ button {
 }
 
 button:hover {
-  background-color: #bc6d38;    
+  background-color: #bc6d38;
 }
